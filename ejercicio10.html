@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 10 - Calculadora de temperatura</title>
+    <link rel="stylesheet" href="css/ejercicio10.css">
+    <script src="js/ejercicio10.js" defer></script>
 </head>
 <body>
-    
+    <div class="contenedor-calculadora">
+        <h1>Calculadora</h1>
+        <p class="subtitulo">Convierta la temperatura de Celcius a Frenheit</p>
+
+        <form class="formulario">
+            <!-- Grupo 1: Celcius -->
+            <div class="grupo-formulario">
+                <label for="celcius">Grados Celcius</label>
+                <input type="text" id="celcius" placeholder="25" required>
+            </div>
+
+            <!-- Grupo 2: farenheit -->
+            <div class="grupo-formulario">
+                <label for="farenheit">Grados Farenheit</label>
+                <input type="text" id="farenheit" placeholder="77" readonly></textarea>
+            </div>
+
+            <!-- Botón -->
+            <button onclick="conversion()" type="submit" class="boton-enviar">
+                Convertir <span></span>
+            </button>
+        </form>
+    </div>
 </body>
 </html>
