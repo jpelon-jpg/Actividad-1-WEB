@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17 - Tareas pendientes con JSON </title>
+    <link rel="stylesheet" href="css/ejercicio17.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/ejercicio17.js" defer></script>
+</head>
+<body>
+    <div class="contenedor-calculadora">
+        <h1>Gestión de tareas pendientes</h1>
+        <p class="subtitulo">Se guardan en Local Storage</p>
+
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label for="tarea">Nueva tarea</label>
+                <input type="text" id="tarea" placeholder="Estudiar JavaScript">
+            </div>
+
+            <button type="submit" class="boton-enviar">
+                Agregar tarea
+            </button>
+        </form>
+
+        <ul id="listaTareas" class="lista-tareas">
+            <!-- Aquí se van a insertar las tareas dinámicamente con JS -->
+        </ul>
+    </div>
+</body>
+</html>

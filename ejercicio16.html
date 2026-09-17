@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16 - Calculadora de operaciones básica </title>
+    <link rel="stylesheet" href="css/ejercicio16.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/ejercicio16.js" defer></script>
+</head>
+<body>
+    <div class="contenedor-calculadora">
+        <h1>Calculadora de operaciones básicas</h1>
+        <p class="subtitulo">Funciones flecha en JavaScript</p>
+
+        <form class="formulario">
+
+            <div class="grupo-formulario">
+                <label for="numero1">Número 1</label>
+                <input type="text" id="numero1" placeholder="10">
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="numero2">Número 2</label>
+                <input type="text" id="numero2" placeholder="5">
+            </div>
+
+            <div class="grupo-formulario grupo-botones">
+                <button type="button" id="btnSumar" class="boton-enviar">Sumar</button>
+                <button type="button" id="btnRestar" class="boton-enviar">Restar</button>
+                <button type="button" id="btnMultiplicar" class="boton-enviar">Multiplicar</button>
+                <button type="button" id="btnDividir" class="boton-enviar">Dividir</button>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="resultado">Resultado</label>
+                <input type="text" id="resultado" readonly>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
