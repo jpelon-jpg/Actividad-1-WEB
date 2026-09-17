@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 14 - Arreglos </title>
+    <link rel="stylesheet" href="css/ejercicio14.css">
+    <script src="js/ejercicio14.js" defer></script>
 </head>
 <body>
-    
+    <div class="contenedor-calculadora">
+        <h1>Numeros y arreglos</h1>
+
+        <form class="formulario">
+           
+            <div class="grupo-formulario">
+                <label for="numeros">Numeros</label>
+                <input type="text" id="numeros" placeholder="1,2,3,4....." required>
+            </div>
+
+            
+            <div class="grupo-formulario">
+                <!--Procedimiento 2*/-->
+                <label for="resultado1">Número mayor</label>
+                <input type="text" id="resultado1" readonly></textarea>
+                <!--Procedimiento 2*/-->
+                <label for="resultado2">Número menor</label>
+                <input type="text" id="resultado2" readonly></textarea>
+                <!--Procedimiento 3*/-->
+                <label for="resultado3">Promedio de todos los números</label>
+                <input type="text" id="resultado3" readonly></textarea>
+            </div>
+
+            
+            <button onclick="procedimiento()" type="submit" class="boton-enviar">
+                Convertir <span></span>
+            </button>
+        </form>
+    </div>
 </body>
 </html>
