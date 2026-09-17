@@ -15,7 +15,7 @@ function conversion(){
     
     var resultado = km*milla;
 
-    document.getElementById("millas").value = resultado.toFixed(2);
+    document.getElementById("millas").value = resultado.toFixed(5);
 }
 
 document.querySelector(".formulario").addEventListener("submit", function(evento){
