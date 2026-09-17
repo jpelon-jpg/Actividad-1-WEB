@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="e">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 12 - Conversos de divisas</title>
+    <link rel="stylesheet" href="css/ejercicio12.css">
+    <script src="js/ejercicio12.js" defer></script>
 </head>
 <body>
-    
+    <div class="contenedor-calculadora">
+        <h1>Convertidor de divisas</h1>
+        <p class="subtitulo">Convierta de pesos mexicanos a dolares</p>
+
+        <form class="formulario">
+           
+            <div class="grupo-formulario">
+                <label for="pesos">Pesos</label>
+                <input type="text" id="pesos" placeholder="17.26" required>
+            </div>
+
+            
+            <div class="grupo-formulario">
+                <label for="dolares">Dolares</label>
+                <input type="text" id="dolares" readonly></textarea>
+            </div>
+
+            
+            <button onclick="conversion()" type="submit" class="boton-enviar">
+                Convertir <span></span>
+            </button>
+        </form>
+    </div>
 </body>
 </html>
