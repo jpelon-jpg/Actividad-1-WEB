@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 13 - ¿Puedes votar?</title>
+    <link rel="stylesheet" href="css/ejercicio13.css">
+    <script src="js/ejercicio13.js" defer></script>
 </head>
 <body>
-    
+    <div class="contenedor-calculadora">
+        <h1>¿Tienes la edad suficiente para votar?</h1>
+        <p class="subtitulo">Ingresa tu edad:</p>
+
+        <form class="formulario">
+           
+            <div class="grupo-formulario">
+                <label for="edad">Edad</label>
+                <input type="text" id="edad" placeholder="22" required>
+            </div>
+
+            
+            <div class="grupo-formulario">
+                <label for="resultado">Resultado</label>
+                <input type="text" id="resultado" readonly></textarea>
+            </div>
+
+            
+            <button onclick="verificar()" type="submit" class="boton-enviar">
+                Convertir <span></span>
+            </button>
+        </form>
+    </div>
 </body>
 </html>
