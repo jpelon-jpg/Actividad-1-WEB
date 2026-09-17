@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 11 - Calculadora de distancias</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+    <script src="js/ejercicio11.js" defer></script>
 </head>
 <body>
-    
+    <div class="contenedor-calculadora">
+        <h1>Convertidor</h1>
+        <p class="subtitulo">Convierta de kilometros a millas</p>
+
+        <form class="formulario">
+           
+            <div class="grupo-formulario">
+                <label for="Kilometros">Kilometros</label>
+                <input type="text" id="kilometros" placeholder="17" required>
+            </div>
+
+            
+            <div class="grupo-formulario">
+                <label for="millas">Millas</label>
+                <input type="text" id="millas" readonly></textarea>
+            </div>
+
+            
+            <button onclick="conversion()" type="submit" class="boton-enviar">
+                Convertir <span></span>
+            </button>
+        </form>
+    </div>
 </body>
 </html>
